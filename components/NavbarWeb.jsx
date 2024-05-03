@@ -25,8 +25,8 @@ const NavbarWeb = () => {
     <div>
     <Navbar expand="lg" className={changeColor ? "color-active" : ""} >
       <Container>
-        <Navbar.Brand href="#home"> <span>
-        Ertand.</span> </Navbar.Brand>
+        <Navbar.Brand href="#home" > <p className={changeColor ? "color-logo-active" : ""}><span>
+        Ertand.</span> </p></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto text-center">

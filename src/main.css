@@ -16,6 +16,10 @@ padding: 0;
   padding:20px 0 20px 0;
   border-bottom:1px solid;
 }
+.color-logo-active span{
+  color: black;
+}
+
 .navbar .nav-link a{
   padding:5px 10px 5px 10px;
   font-weight:500;
@@ -29,9 +33,9 @@ padding: 0;
   color:white;
 }
 
-.navbar span {
+.navbar p {
   font-weight:700;
-  color: white;
+  color:white;
 }
 .homepage-image {
   width: 100%;
