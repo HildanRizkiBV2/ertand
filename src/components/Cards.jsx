@@ -12,7 +12,7 @@ function Cards() {
         <Card.Text>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, sequi, quos, ea inventore aspernatur omnis iste obcaecati facere magni ipsum ducimus expedita minus. Voluptate dolores obcaecati inventore quibusdam aspernatur pariatur.
         </Card.Text>
-        <Button variant="primary" href='/product' > Go product</Button>
+        <Button variant="primary" onClick={() => window.location.href = '/product'}> Go product</Button>
       </Card.Body>
     </Card>
     </div>
