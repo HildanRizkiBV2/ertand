@@ -1,0 +1,27 @@
+
+.navbar-image {
+    width: 0px;
+}
+.navbar-wev {
+    height: 80px;
+    display: flex;
+    background-color: transparent; 
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    font-size: 1.3rem;
+    border-bottom: 1px solid white; }
+.header {
+
+}
+.detail {
+    
+}
+.detail-container {
+
+}
+.carousel-item {
+    color: yellow;
+
+}
