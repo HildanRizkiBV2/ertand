@@ -3,6 +3,7 @@ import Cards from '../components/Cards'
 import FooterWeb from '../../components/FooterWeb'
 import Coundown from "react-countdown";
 import Image from '../assets/image/Hoodie.png'
+
 const HomePage = () => { 
   const timeLeft = () => {
     const rilisDate= new Date("may 30, 2024 00:00:00").getTime();

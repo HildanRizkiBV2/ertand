@@ -1,6 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Image1 from '../assets/image/Hoodie.png';
+import { NavLink } from 'react-router-dom';
 
 function Cards() {
   return (
@@ -12,7 +13,7 @@ function Cards() {
         <Card.Text>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, sequi, quos, ea inventore aspernatur omnis iste obcaecati facere magni ipsum ducimus expedita minus. Voluptate dolores obcaecati inventore quibusdam aspernatur pariatur.
         </Card.Text>
-        <Button variant="primary" onClick={() => window.location.href = '/product'}> Go product</Button>
+        <NavLink className="btn btn-primary" to="/product"> Go product</NavLink>
       </Card.Body>
     </Card>
     </div>
