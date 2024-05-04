@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { update } from "../features/productSlice";
+import { update } from "../features/ProductSlice";
 
 export const AddProduct = () => {
   const [title, setTitle] = useState("");

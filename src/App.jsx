@@ -7,7 +7,6 @@ import HomePage from "./pages/HomePage.jsx";
 import ProductPage from "./pages/ProductPage.jsx";
 import DokumentasiPage from "./pages/DokumentasiPage.jsx";
 import ProfilePage from "./pages/ProfilePage.jsx";
-import AddProduct from "./pages/AddProduct.jsx";
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
         <Route path="/product" Component={ProductPage} />
         <Route path="/dokumentasi" Component={DokumentasiPage} />
         <Route path="/profile" Component={ProfilePage} />
-        <Route path="/add" Component={AddProduct} />
       </Routes>
     </div>
   );
