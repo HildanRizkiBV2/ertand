@@ -6,4 +6,4 @@
         {id: 4, title: "product 4", price: 4000},
         {id: 5, title: "product 5", price: 5000},
     ]
-}
+};
