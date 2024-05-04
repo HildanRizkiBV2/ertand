@@ -30,7 +30,7 @@ const HomePage = () => {
         <img
           src={Image}
           alt=""
-          className="animate__animated animate__bounce  animate__delay-2s homepage-image pt-3 pb-5"
+          className="animate__animated animate__bounce  animate__delay-1s homepage-image pt-3 pb-5"
         />
       </div>
       <div className="pb-5">

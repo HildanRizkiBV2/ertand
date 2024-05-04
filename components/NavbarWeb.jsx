@@ -27,7 +27,7 @@ const NavbarWeb = () => {
             <Navbar.Brand href="#home">
               {" "}
               <p className={changeColor ? "color-logo-active" : ""}>
-                <span>Ertand.</span>{" "}
+                <span>Castle.</span>{" "}
               </p>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />

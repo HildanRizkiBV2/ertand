@@ -65,6 +65,12 @@ body,
 .bjir {
   background-color: blue;
 }
+.product-list {
+  padding-top: 150px;
+}
+.form-product {
+  padding-top: 100px;
+}
 
 @media screen and (max-width: 900px) {
   .homepages .row:nth-child(1) {
