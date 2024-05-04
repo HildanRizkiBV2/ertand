@@ -60,7 +60,7 @@ body,
   padding: 5px;
 }
 .gallery img {
-  height: 250px;
+  width: 250px;
 }
 .bjir {
   background-color: blue;
@@ -80,6 +80,12 @@ body,
 }
 @media screen and (max-width: 500px) {
   .gallery img {
-    height: 150px;
+    width: 50px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .gallery img {
+    width: 1px;
+    background-color: #dc3545;
   }
 }
