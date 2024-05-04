@@ -21,7 +21,9 @@ const GalleryComp = () => {
           </Col>
           <Col>
             <img src={Image1} alt="image1" data-aos="fade-up" />
-            <h4 className="text-center pb-5">kaos</h4>
+            <h4 className="text-center pb-5 " data-aos="fade-up">
+              kaos
+            </h4>
           </Col>
         </Row>
       </Container>
