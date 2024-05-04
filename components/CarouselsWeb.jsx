@@ -1,5 +1,5 @@
-import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage from '../src/assets/1.png';
+import Carousel from "react-bootstrap/Carousel";
+import ExampleCarouselImage from "../src/assets/1.png";
 
 const CarouselsWeb = () => {
   return (
@@ -29,6 +29,6 @@ const CarouselsWeb = () => {
       </Carousel.Item>
     </Carousel>
   );
-}
+};
 
-export default CarouselsWeb
+export default CarouselsWeb;
