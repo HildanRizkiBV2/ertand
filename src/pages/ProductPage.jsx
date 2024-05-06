@@ -10,6 +10,7 @@ const ProductPage = () => {
           Add product
         </Link>
         <CardsComp />
+        <h1 className="pt-5">Reload to triger delete</h1>
       </div>
     </div>
   );

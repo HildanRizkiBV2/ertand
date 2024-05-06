@@ -16,6 +16,7 @@ const CardsComp = () => {
   useEffect(() => {
     dispatch(getProduct());
   }, [dispatch]);
+  useEffect(() => {}, [products]);
   return (
     <div className="min-vh-100 d-flex justify-content-center">
       <div className="">
