@@ -2,25 +2,51 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import { saveProduct } from "../features/ProductSlice";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  getProduct,
+  productSelectors,
+  updateProduct,
+} from "../features/ProductSlice";
+import { useNavigate, useParams } from "react-router-dom";
+import axios from "axios";
 
-export const AddProduct = () => {
+export const EditProduct = () => {
   const [title, setTitle] = useState("");
   const [price, setPrice] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const createProduct = async (e) => {
+  const { id } = useParams();
+
+  const product = useSelector((state) =>
+    productSelectors.selectById(state, id)
+  );
+
+  useEffect(() => {
+    dispatch(getProduct());
+  }, [dispatch]);
+  useEffect(() => {
+    if (product) {
+      setTitle(product.title);
+      setPrice(product.price);
+    }
+  }, [product]);
+
+  const handleUpdate = async (e) => {
     e.preventDefault();
-    await dispatch(saveProduct({ title, price }));
+    await dispatch(
+      updateProduct({
+        id,
+        title,
+        price,
+      })
+    );
     navigate("/product");
   };
-
   return (
     <div className="min-vh-100 ">
       <div className="form-product">
-        <Form onSubmit={createProduct}>
+        <Form onSubmit={handleUpdate}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>title</Form.Label>
             <Form.Control
@@ -50,4 +76,4 @@ export const AddProduct = () => {
   );
 };
 
-export default AddProduct;
+export default EditProduct;
